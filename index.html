@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌍 Language Learning App</h1>
+
+    <div class="container">
+
+        <!-- Category -->
+        <div class="section">
+            <h2>Select Category</h2>
+
+            <select id="category">
+                <option value="greetings">Greetings</option>
+                <option value="food">Food</option>
+                <option value="colors">Colors</option>
+            </select>
+        </div>
+
+        <!-- Flashcards -->
+        <div class="section">
+            <h2>Flashcards</h2>
+
+            <div class="card">
+
+                <h3 id="word"></h3>
+
+                <p id="translation"></p>
+
+                <button onclick="speakWord()">
+                    🔊 Pronounce
+                </button>
+
+                <button onclick="nextWord()">
+                    Next Word
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="section">
+
+            <h2>Quiz</h2>
+
+            <p id="question"></p>
+
+            <button id="option1"></button>
+            <button id="option2"></button>
+            <button id="option3"></button>
+
+            <h3 id="result"></h3>
+
+            <h3>
+                Score :
+                <span id="score">0</span>
+            </h3>
+
+        </div>
+
+    </div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
